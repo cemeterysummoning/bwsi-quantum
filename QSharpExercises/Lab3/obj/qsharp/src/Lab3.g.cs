@@ -16,26 +16,26 @@ using Microsoft.Quantum.Simulation.Core;
 
 [assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise1\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":29,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":30}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a register of unknown length, which\",\" will be in the state |0...0>. Your goal is to put it into the |+...+>\",\" state, which is a uniform superposition of all possible states. For\",\" example, if it had three qubits, you would have to put it into this\",\" state:\",\"\",\"     |+++> = 1/√8(|000> + |001> + |010> + |011>\",\"                + |100> + |101> + |110> + |111>)\",\"\",\" # Input\",\" ## register\",\" A register of unknown length. All of its qubits are in the |0> state,\",\" so the register's state is |0...0>.\",\"\",\" # Remarks\",\" This will test your knowledge of how to construct uniform\",\" superpositions, where a register is in a combination of all possible\",\" states, and each state has an equal amplitude to the others.\"]}")]
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise1\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":29,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise2\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":61,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":30}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"target\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":42},\"Item2\":{\"Line\":1,\"Column\":48}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a register with three qubits in it,\",\" and an extra \\\"target\\\" qubit. All of the qubits are in the |0> state.\",\" Your goal is to put the register into a uniform superposition of all\",\" possible states, and entangle the target qubit so that when all three\",\" register qubits are in the |1> state, the target qubit will be |1> as\",\" well. More specifically, you must generate this state:\",\"\",\"     |register,target> = 1/√8(|000,0> + |001,0> + |010,0> + |011,0>\",\"                            + |100,0> + |101,0> + |110,0> + |111,1>)\",\"\",\" # Input\",\" ## register\",\" A register of three qubits, in the |000> state.\",\"\",\" ## target\",\" A qubit in the |0> state. It should be set to |1> when all of the\",\" register qubits are in the |1> state.\",\"\",\" # Remarks\",\" This will show you how to use gates in controlled mode with more than\",\" one control qubit.\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise2\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":61,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":30}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"target\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":42},\"Item2\":{\"Line\":1,\"Column\":48}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a register with three qubits in it,\",\" and an extra \\\"target\\\" qubit. All of the qubits are in the |0> state.\",\" Your goal is to put the register into a uniform superposition of all\",\" possible states, and entangle the target qubit so that when all three\",\" register qubits are in the |1> state, the target qubit will be |1> as\",\" well. More specifically, you must generate this state:\",\"\",\"     |register,target> = 1/√8(|000,0> + |001,0> + |010,0> + |011,0>\",\"                            + |100,0> + |101,0> + |110,0> + |111,1>)\",\"\",\" # Input\",\" ## register\",\" A register of three qubits, in the |000> state.\",\"\",\" ## target\",\" A qubit in the |0> state. It should be set to |1> when all of the\",\" register qubits are in the |1> state.\",\"\",\" # Remarks\",\" This will show you how to use gates in controlled mode with more than\",\" one control qubit.\"]}")]
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise2\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":61,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise3\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":95,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":30}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"target\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":42},\"Item2\":{\"Line\":1,\"Column\":48}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" This exercise is an extension of Exercise 2. Once again, you are given\",\" a register with three qubits in it, and an extra \\\"target\\\" qubit. All\",\" of the qubits are in the |0> state. Your goal this time is to put the\",\" register and the target qubit into this state:\",\"\",\"     |register,target> = 1/√8(|000,0> + |001,1> + |010,0> + |011,0>\",\"                            + |100,0> + |101,0> + |110,0> + |111,0>)\",\"\",\" Note that in this exercise, you must flip the target qubit when the\",\" register is in the |001> state instead of the |111> state.\",\"\",\" # Input\",\" ## register\",\" A register of three qubits, in the |000> state.\",\"\",\" ## target\",\" A qubit in the |0> state. It should be set to |1> when the register is\",\" in the |001> state.\",\"\",\" # Remarks\",\" This will show you how to use zero-controlled (a.k.a. anti-controlled)\",\" gates.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise3\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":95,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise4\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":126,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"registers\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":31}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given 3 separate three-qubit registers. Each\",\" of them will start in the |000> state.\",\" Your goal is to put them into the following uniform superpositions:\",\"\",\"     |registers[0]> = 1/√8(|000> - |001> + |010> - |011>\",\"                         + |100> - |101> + |110> - |111>)\",\"     |registers[1]> = 1/√8(|000> + |001> - |010> - |011>\",\"                         + |100> + |101> - |110> - |111>)\",\"     |registers[2]> = 1/√8(|000> + |001> + |010> + |011>\",\"                         - |100> - |101> - |110> - |111>)\",\"\",\" # Input\",\" ## registers\",\" An array of three 3-qubit registers, each of which is in the |000> state.\",\"\",\" # Remarks\",\" This will show how phase flips affect complex superpositions with more\",\" than two states.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise4\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":126,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise5\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":159,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":30}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a three-qubit register in the |000>\",\" state. Your goal is to put it in the following uniform superposition:\",\"\",\"     |register> = 1/√8(|000> + |001> + |010> + |011>\",\"                     + |100> + |101> - |110> + |111>)\",\"\",\" Note that all of the individual states are positive, except for |110>\",\" which is negative.\",\"\",\" # Input\",\" ## register\",\" A register of three qubits, in the |000> state.\",\"\",\" # Remarks\",\" This will teach you how to selectively flip the phase of specific\",\" states in a superposition by using an extra qubit.\",\"\",\" This specific technique is called \\\"phase kickback\\\", and it's one of\",\" the most important techniques used in quantum algorithms; we'll talk\",\" about it more when we get to that section in class.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise5\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":159,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise6\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":193,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":30}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a register with two qubits in the |00>\",\" state. Your goal is to put it in this non-uniform superposition:\",\"\",\"     |register> = 1/√2*|00> + 1/2(|10> + |11>)\",\"\",\" Note: this state will have a 50% chance of being measured as |00>, a\",\" 25% chance of being measured as |10>, and a 25% chance of being\",\" measured as |11>.\",\"\",\" # Input\",\" ## register\",\" A register with two qubits in the |00> state.\",\"\",\" # Remarks\",\" This will show you that any gate can be used in controlled mode, not\",\" just the X gate.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise6\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":193,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise7\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":224,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":30}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a three-qubit register in the |000>\",\" state. Your goal is to transform it into this uneven superposition:\",\"\",\"     |register> = 1/√2*|000> + 1/2(|111> - |100>)\",\"\",\" # Input\",\" ## register\",\" A register with three qubits in the |000> state.\",\"\",\" # Remarks\",\" This will combine everything you have learned so far into one problem:\",\" - Creating superpositions with the Hadamard gate\",\" - Quantum entanglement\",\" - Multi-controlled and zero-controlled gates\",\" - Phase-flipping specific states\",\" - Allocating qubits in Q#\",\"\",\" Once you solve this, you've mastered the basics of quantum computing!\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise7\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":224,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Challenge1\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":258,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":23},\"Item2\":{\"Line\":1,\"Column\":31}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" === CHALLENGE PROBLEMS === ///\",\"\",\"\",\"\",\"\",\"\",\" # Summary\",\" In this problem, you are given a two-qubit register in the |00> state.\",\" Your goal is to put it into this superposition:\",\"\",\"     |register> = 1/√3(|00> + |01> + |10>)\",\"\",\" Note that all three states have equal amplitude.\",\"\",\" # Input\",\" ## register\",\" A two-qubit register in the |00> state.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Challenge1\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":258,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Challenge2\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":276,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":23},\"Item2\":{\"Line\":1,\"Column\":31}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this problem, you are given a three-qubit register in the |000>\",\" state. Your goal is to put it into this superposition:\",\"\",\"     |register> = 1/√3(|100> + |010> + |001>)\",\"\",\" Note that all states have equal amplitude. This is known as the\",\" three-qubit \\\"W State\\\".\",\"\",\" # Input\",\" ## register\",\" A three-qubit register in the |000> state.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Challenge2\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":276,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Challenge3\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":320,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":23},\"Item2\":{\"Line\":1,\"Column\":31}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this problem, you are given a three-qubit register in the |000>\",\" state. Your goal is to encode 8 samples of a sine wave into its\",\" amplitude. The samples should be evenly spaced in π/4 increments,\",\" starting with 0 and ending with 7π/4. The sine wave samples are laid\",\" out in the table below:\",\"\",\"  Index  |  Value\",\" ------- | -------\",\"    0    |    0\",\"    1    |   1/√2\",\"    2    |    1\",\"    3    |   1/√2\",\"    4    |    0\",\"    5    |  -1/√2\",\"    6    |   -1\",\"    7    |  -1/√2\",\"\",\" Note that these samples are not normalized; if they were used as state\",\" amplitudes, they would result in a probability greater than 1.\",\"\",\" Your first task is to normalize the sine wave samples so they can be\",\" used as state amplitudes. Your second task is to encode these 8\",\" normalized values as the amplitudes of the three-qubit register.\",\"\",\" # Input\",\" ## register\",\" A three-qubit register in the |000> state.\",\"\",\" # Remarks\",\" This kind of challenge is common in quantum computing - essentially,\",\" you need to construct an efficient circuit that will take real data,\",\" and encode it into the superposition of a qubit register. Note that\",\" normally, it would take 8 doubles to store these values in\",\" conventional memory - a total of 512 classical bits. You're going to\",\" encode the exact same data in 3 qubits. We'll talk more about how\",\" quantum computers do things faster than classical computers once we\",\" get to quantum algorithms, but this is a good first hint.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Challenge3\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":320,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Challenge4\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":348,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":23},\"Item2\":{\"Line\":1,\"Column\":31}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" This problem is the same as Challenge 3, but now you must construct a\",\" superposition using 8 samples of a cosine wave instead of a sine wave.\",\" For your convenience, the cosine samples are listed in this table:\",\"\",\"  Index  |  Value\",\" ------- | -------\",\"    0    |    1\",\"    1    |   1/√2\",\"    2    |    0\",\"    3    |  -1/√2\",\"    4    |   -1\",\"    5    |  -1/√2\",\"    6    |    0\",\"    7    |   1/√2\",\"\",\" Once again, these values aren't normalized, so you will have to\",\" normalize them before using them as state amplitudes.\",\"\",\" # Input\",\" ## register\",\" A three-qubit register in the |000> state.\"]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Challenge4\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":348,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise3\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":99,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":30}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"target\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":42},\"Item2\":{\"Line\":1,\"Column\":48}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" This exercise is an extension of Exercise 2. Once again, you are given\",\" a register with three qubits in it, and an extra \\\"target\\\" qubit. All\",\" of the qubits are in the |0> state. Your goal this time is to put the\",\" register and the target qubit into this state:\",\"\",\"     |register,target> = 1/√8(|000,0> + |001,1> + |010,0> + |011,0>\",\"                            + |100,0> + |101,0> + |110,0> + |111,0>)\",\"\",\" Note that in this exercise, you must flip the target qubit when the\",\" register is in the |001> state instead of the |111> state.\",\"\",\" # Input\",\" ## register\",\" A register of three qubits, in the |000> state.\",\"\",\" ## target\",\" A qubit in the |0> state. It should be set to |1> when the register is\",\" in the |001> state.\",\"\",\" # Remarks\",\" This will show you how to use zero-controlled (a.k.a. anti-controlled)\",\" gates.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise3\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":99,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise4\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":137,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"registers\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":31}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given 3 separate three-qubit registers. Each\",\" of them will start in the |000> state.\",\" Your goal is to put them into the following uniform superpositions:\",\"\",\"     |registers[0]> = 1/√8(|000> - |001> + |010> - |011>\",\"                         + |100> - |101> + |110> - |111>)\",\"     |registers[1]> = 1/√8(|000> + |001> - |010> - |011>\",\"                         + |100> + |101> - |110> - |111>)\",\"     |registers[2]> = 1/√8(|000> + |001> + |010> + |011>\",\"                         - |100> - |101> - |110> - |111>)\",\"\",\" # Input\",\" ## registers\",\" An array of three 3-qubit registers, each of which is in the |000> state.\",\"\",\" # Remarks\",\" This will show how phase flips affect complex superpositions with more\",\" than two states.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise4\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":137,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise5\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":174,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":30}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a three-qubit register in the |000>\",\" state. Your goal is to put it in the following uniform superposition:\",\"\",\"     |register> = 1/√8(|000> + |001> + |010> + |011>\",\"                     + |100> + |101> - |110> + |111>)\",\"\",\" Note that all of the individual states are positive, except for |110>\",\" which is negative.\",\"\",\" # Input\",\" ## register\",\" A register of three qubits, in the |000> state.\",\"\",\" # Remarks\",\" This will teach you how to selectively flip the phase of specific\",\" states in a superposition by using an extra qubit.\",\"\",\" This specific technique is called \\\"phase kickback\\\", and it's one of\",\" the most important techniques used in quantum algorithms; we'll talk\",\" about it more when we get to that section in class.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise5\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":174,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise6\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":216,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":30}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a register with two qubits in the |00>\",\" state. Your goal is to put it in this non-uniform superposition:\",\"\",\"     |register> = 1/√2*|00> + 1/2(|10> + |11>)\",\"\",\" Note: this state will have a 50% chance of being measured as |00>, a\",\" 25% chance of being measured as |10>, and a 25% chance of being\",\" measured as |11>.\",\"\",\" # Input\",\" ## register\",\" A register with two qubits in the |00> state.\",\"\",\" # Remarks\",\" This will show you that any gate can be used in controlled mode, not\",\" just the X gate.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise6\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":216,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise7\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":249,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":22},\"Item2\":{\"Line\":1,\"Column\":30}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this exercise, you are given a three-qubit register in the |000>\",\" state. Your goal is to transform it into this uneven superposition:\",\"\",\"     |register> = 1/√2*|000> + 1/2(|111> - |100>)\",\"\",\" # Input\",\" ## register\",\" A register with three qubits in the |000> state.\",\"\",\" # Remarks\",\" This will combine everything you have learned so far into one problem:\",\" - Creating superpositions with the Hadamard gate\",\" - Quantum entanglement\",\" - Multi-controlled and zero-controlled gates\",\" - Phase-flipping specific states\",\" - Allocating qubits in Q#\",\"\",\" Once you solve this, you've mastered the basics of quantum computing!\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Exercise7\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":249,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Challenge1\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":290,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":23},\"Item2\":{\"Line\":1,\"Column\":31}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" === CHALLENGE PROBLEMS === ///\",\"\",\"\",\"\",\"\",\"\",\" # Summary\",\" In this problem, you are given a two-qubit register in the |00> state.\",\" Your goal is to put it into this superposition:\",\"\",\"     |register> = 1/√3(|00> + |01> + |10>)\",\"\",\" Note that all three states have equal amplitude.\",\"\",\" # Input\",\" ## register\",\" A two-qubit register in the |00> state.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Challenge1\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":290,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Challenge2\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":314,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":23},\"Item2\":{\"Line\":1,\"Column\":31}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this problem, you are given a three-qubit register in the |000>\",\" state. Your goal is to put it into this superposition:\",\"\",\"     |register> = 1/√3(|100> + |010> + |001>)\",\"\",\" Note that all states have equal amplitude. This is known as the\",\" three-qubit \\\"W State\\\".\",\"\",\" # Input\",\" ## register\",\" A three-qubit register in the |000> state.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Challenge2\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":314,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Challenge3\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":364,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":23},\"Item2\":{\"Line\":1,\"Column\":31}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" In this problem, you are given a three-qubit register in the |000>\",\" state. Your goal is to encode 8 samples of a sine wave into its\",\" amplitude. The samples should be evenly spaced in π/4 increments,\",\" starting with 0 and ending with 7π/4. The sine wave samples are laid\",\" out in the table below:\",\"\",\"  Index  |  Value\",\" ------- | -------\",\"    0    |    0\",\"    1    |   1/√2\",\"    2    |    1\",\"    3    |   1/√2\",\"    4    |    0\",\"    5    |  -1/√2\",\"    6    |   -1\",\"    7    |  -1/√2\",\"\",\" Note that these samples are not normalized; if they were used as state\",\" amplitudes, they would result in a probability greater than 1.\",\"\",\" Your first task is to normalize the sine wave samples so they can be\",\" used as state amplitudes. Your second task is to encode these 8\",\" normalized values as the amplitudes of the three-qubit register.\",\"\",\" # Input\",\" ## register\",\" A three-qubit register in the |000> state.\",\"\",\" # Remarks\",\" This kind of challenge is common in quantum computing - essentially,\",\" you need to construct an efficient circuit that will take real data,\",\" and encode it into the superposition of a qubit register. Note that\",\" normally, it would take 8 doubles to store these values in\",\" conventional memory - a total of 512 classical bits. You're going to\",\" encode the exact same data in 3 qubits. We'll talk more about how\",\" quantum computers do things faster than classical computers once we\",\" get to quantum algorithms, but this is a good first hint.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Challenge3\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":364,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab3\",\"Name\":\"Challenge4\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Empty\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":399,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":23},\"Item2\":{\"Line\":1,\"Column\":31}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[\" # Summary\",\" This problem is the same as Challenge 3, but now you must construct a\",\" superposition using 8 samples of a cosine wave instead of a sine wave.\",\" For your convenience, the cosine samples are listed in this table:\",\"\",\"  Index  |  Value\",\" ------- | -------\",\"    0    |    1\",\"    1    |   1/√2\",\"    2    |    0\",\"    3    |  -1/√2\",\"    4    |   -1\",\"    5    |  -1/√2\",\"    6    |    0\",\"    7    |   1/√2\",\"\",\" Once again, these values aren't normalized, so you will have to\",\" normalize them before using them as state amplitudes.\",\"\",\" # Input\",\" ## register\",\" A three-qubit register in the |000> state.\"]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab3\",\"Name\":\"Challenge4\"},\"Attributes\":[],\"SourceFile\":\"/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs\",\"Position\":{\"Item1\":399,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
 #line hidden
 namespace Lab3
 {
@@ -83,7 +83,7 @@ namespace Lab3
         }
     }
 
-    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 62, 96)]
+    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 62, 100)]
     public partial class Exercise2 : Operation<(IQArray<Qubit>,Qubit), QVoid>, ICallable
     {
         public Exercise2(IOperationFactory m) : base(m)
@@ -107,11 +107,25 @@ namespace Lab3
 
         String ICallable.Name => "Exercise2";
         String ICallable.FullName => "Lab3.Exercise2";
+        protected ICallable<IQArray<Qubit>, QVoid> Exercise1__
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
+        {
+            get;
+            set;
+        }
+
         public override Func<(IQArray<Qubit>,Qubit), QVoid> __Body__ => (__in__) =>
         {
             var (register,target) = __in__;
-#line 69 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 70 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Exercise1__.Apply(register);
+#line 71 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__X.Controlled.Apply((register, target));
 #line hidden
             return QVoid.Instance;
         }
@@ -119,6 +133,8 @@ namespace Lab3
         ;
         public override void __Init__()
         {
+            this.Exercise1__ = this.__Factory__.Get<ICallable<IQArray<Qubit>, QVoid>>(typeof(Exercise1));
+            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
         }
 
         public override IApplyData __DataIn__((IQArray<Qubit>,Qubit) data) => new In(data);
@@ -129,7 +145,7 @@ namespace Lab3
         }
     }
 
-    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 96, 127)]
+    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 100, 138)]
     public partial class Exercise3 : Operation<(IQArray<Qubit>,Qubit), QVoid>, ICallable
     {
         public Exercise3(IOperationFactory m) : base(m)
@@ -153,11 +169,35 @@ namespace Lab3
 
         String ICallable.Name => "Exercise3";
         String ICallable.FullName => "Lab3.Exercise3";
+        protected ICallable Microsoft__Quantum__Canon__ApplyToEach
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
+        {
+            get;
+            set;
+        }
+
         public override Func<(IQArray<Qubit>,Qubit), QVoid> __Body__ => (__in__) =>
         {
             var (register,target) = __in__;
-#line 104 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 110 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Canon__ApplyToEach.Apply((Microsoft__Quantum__Intrinsic__H, register));
+#line 113 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__X.Controlled.Apply((register, target));
+#line 114 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(register[0L]);
+#line 115 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(register[1L]);
 #line hidden
             return QVoid.Instance;
         }
@@ -165,6 +205,9 @@ namespace Lab3
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Canon__ApplyToEach = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Canon.ApplyToEach<>));
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
+            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
         }
 
         public override IApplyData __DataIn__((IQArray<Qubit>,Qubit) data) => new In(data);
@@ -175,7 +218,7 @@ namespace Lab3
         }
     }
 
-    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 127, 160)]
+    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 138, 175)]
     public partial class Exercise4 : Operation<IQArray<IQArray<Qubit>>, QVoid>, ICallable
     {
         public Exercise4(IOperationFactory m) : base(m)
@@ -184,11 +227,35 @@ namespace Lab3
 
         String ICallable.Name => "Exercise4";
         String ICallable.FullName => "Lab3.Exercise4";
+        protected ICallable Microsoft__Quantum__Canon__ApplyToEach
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<IQArray<Qubit>, QVoid> Exercise1__
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__Z
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<IQArray<Qubit>>, QVoid> __Body__ => (__in__) =>
         {
             var registers = __in__;
-#line 135 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 147 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Canon__ApplyToEach.Apply((Exercise1__, registers));
+#line 148 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__Z.Apply(registers[0L][2L]);
+#line 149 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__Z.Apply(registers[1L][1L]);
+#line 150 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__Z.Apply(registers[2L][0L]);
 #line hidden
             return QVoid.Instance;
         }
@@ -196,6 +263,9 @@ namespace Lab3
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Canon__ApplyToEach = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Canon.ApplyToEach<>));
+            this.Exercise1__ = this.__Factory__.Get<ICallable<IQArray<Qubit>, QVoid>>(typeof(Exercise1));
+            this.Microsoft__Quantum__Intrinsic__Z = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.Z));
         }
 
         public override IApplyData __DataIn__(IQArray<IQArray<Qubit>> data) => data;
@@ -206,7 +276,7 @@ namespace Lab3
         }
     }
 
-    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 160, 194)]
+    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 175, 217)]
     public partial class Exercise5 : Operation<IQArray<Qubit>, QVoid>, ICallable
     {
         public Exercise5(IOperationFactory m) : base(m)
@@ -215,11 +285,87 @@ namespace Lab3
 
         String ICallable.Name => "Exercise5";
         String ICallable.FullName => "Lab3.Exercise5";
+        protected ICallable Microsoft__Quantum__Canon__ApplyToEach
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
+        protected Allocate Allocate__
+        {
+            get;
+            set;
+        }
+
+        protected Release Release__
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__Z
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Qubit, QVoid> Reset__
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Qubit>, QVoid> __Body__ => (__in__) =>
         {
             var register = __in__;
-#line 173 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 189 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Canon__ApplyToEach.Apply((Microsoft__Quantum__Intrinsic__H, register));
+#line hidden
+            {
+#line 190 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+                var qAux = Allocate__.Apply();
+#line hidden
+                bool __arg1__ = true;
+                try
+                {
+#line 191 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+                    Microsoft__Quantum__Intrinsic__X.Apply(qAux);
+#line 193 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+                    Microsoft__Quantum__Intrinsic__Z.Controlled.Apply((register, qAux));
+#line 194 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+                    Microsoft__Quantum__Intrinsic__X.Apply(register[2L]);
+#line 196 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+                    Reset__.Apply(qAux);
+                }
+#line hidden
+                catch
+                {
+                    __arg1__ = false;
+                    throw;
+                }
+#line hidden
+                finally
+                {
+                    if (__arg1__)
+                    {
+#line hidden
+                        Release__.Apply(qAux);
+                    }
+                }
+            }
+
 #line hidden
             return QVoid.Instance;
         }
@@ -227,6 +373,13 @@ namespace Lab3
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Canon__ApplyToEach = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Canon.ApplyToEach<>));
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
+            this.Allocate__ = this.__Factory__.Get<Allocate>(typeof(global::Microsoft.Quantum.Intrinsic.Allocate));
+            this.Release__ = this.__Factory__.Get<Release>(typeof(global::Microsoft.Quantum.Intrinsic.Release));
+            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
+            this.Microsoft__Quantum__Intrinsic__Z = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.Z));
+            this.Reset__ = this.__Factory__.Get<ICallable<Qubit, QVoid>>(typeof(global::Microsoft.Quantum.Intrinsic.Reset));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;
@@ -237,7 +390,7 @@ namespace Lab3
         }
     }
 
-    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 194, 225)]
+    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 217, 250)]
     public partial class Exercise6 : Operation<IQArray<Qubit>, QVoid>, ICallable
     {
         public Exercise6(IOperationFactory m) : base(m)
@@ -246,11 +399,19 @@ namespace Lab3
 
         String ICallable.Name => "Exercise6";
         String ICallable.FullName => "Lab3.Exercise6";
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Qubit>, QVoid> __Body__ => (__in__) =>
         {
             var register = __in__;
-#line 202 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 226 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__H.Apply(register[0L]);
+#line 227 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__H.Controlled.Apply((new QArray<Qubit>(register[0L]), register[1L]));
 #line hidden
             return QVoid.Instance;
         }
@@ -258,6 +419,7 @@ namespace Lab3
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;
@@ -268,7 +430,7 @@ namespace Lab3
         }
     }
 
-    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 225, 259)]
+    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 250, 291)]
     public partial class Exercise7 : Operation<IQArray<Qubit>, QVoid>, ICallable
     {
         public Exercise7(IOperationFactory m) : base(m)
@@ -277,11 +439,51 @@ namespace Lab3
 
         String ICallable.Name => "Exercise7";
         String ICallable.FullName => "Lab3.Exercise7";
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<(Qubit,Qubit,Qubit)> Microsoft__Quantum__Intrinsic__CCNOT
+        {
+            get;
+            set;
+        }
+
+        protected ICallable Microsoft__Quantum__Canon__ApplyToEach
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__Z
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Qubit>, QVoid> __Body__ => (__in__) =>
         {
             var register = __in__;
-#line 230 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 256 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__H.Apply(register[0L]);
+#line 257 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__H.Controlled.Apply((new QArray<Qubit>(register[0L]), register[1L]));
+#line 258 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__CCNOT.Apply((register[0L], register[1L], register[2L]));
+#line 259 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Canon__ApplyToEach.Apply((Microsoft__Quantum__Intrinsic__X, new QArray<Qubit>(register[1L], register[2L])));
+#line 260 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__Z.Controlled.Apply((new QArray<Qubit>(register[1L], register[2L]), register[0L]));
+#line 261 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Canon__ApplyToEach.Apply((Microsoft__Quantum__Intrinsic__X, new QArray<Qubit>(register[1L], register[2L])));
 #line hidden
             return QVoid.Instance;
         }
@@ -289,6 +491,11 @@ namespace Lab3
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
+            this.Microsoft__Quantum__Intrinsic__CCNOT = this.__Factory__.Get<IUnitary<(Qubit,Qubit,Qubit)>>(typeof(global::Microsoft.Quantum.Intrinsic.CCNOT));
+            this.Microsoft__Quantum__Canon__ApplyToEach = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Canon.ApplyToEach<>));
+            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
+            this.Microsoft__Quantum__Intrinsic__Z = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.Z));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;
@@ -299,7 +506,7 @@ namespace Lab3
         }
     }
 
-    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 259, 277)]
+    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 291, 315)]
     public partial class Challenge1 : Operation<IQArray<Qubit>, QVoid>, ICallable
     {
         public Challenge1(IOperationFactory m) : base(m)
@@ -308,11 +515,57 @@ namespace Lab3
 
         String ICallable.Name => "Challenge1";
         String ICallable.FullName => "Lab3.Challenge1";
+        protected IUnitary<(Double,Qubit)> Microsoft__Quantum__Intrinsic__Ry
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Double, Double> Microsoft__Quantum__Math__ArcCos
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Double, Double> Microsoft__Quantum__Math__Sqrt
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<(Qubit,Qubit)> Microsoft__Quantum__Intrinsic__CNOT
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Qubit>, QVoid> __Body__ => (__in__) =>
         {
             var register = __in__;
-#line 261 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 294 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__Ry.Apply(((2D * Microsoft__Quantum__Math__ArcCos.Apply(Microsoft__Quantum__Math__Sqrt.Apply((2D / 3D)))), register[0L]));
+#line 295 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__CNOT.Apply((register[0L], register[1L]));
+#line 296 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(register[0L]);
+#line 297 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__H.Controlled.Apply((new QArray<Qubit>(register[0L]), register[1L]));
+#line 298 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(register[0L]);
+#line 299 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(register[1L]);
 #line hidden
             return QVoid.Instance;
         }
@@ -320,6 +573,12 @@ namespace Lab3
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Intrinsic__Ry = this.__Factory__.Get<IUnitary<(Double,Qubit)>>(typeof(global::Microsoft.Quantum.Intrinsic.Ry));
+            this.Microsoft__Quantum__Math__ArcCos = this.__Factory__.Get<ICallable<Double, Double>>(typeof(global::Microsoft.Quantum.Math.ArcCos));
+            this.Microsoft__Quantum__Math__Sqrt = this.__Factory__.Get<ICallable<Double, Double>>(typeof(global::Microsoft.Quantum.Math.Sqrt));
+            this.Microsoft__Quantum__Intrinsic__CNOT = this.__Factory__.Get<IUnitary<(Qubit,Qubit)>>(typeof(global::Microsoft.Quantum.Intrinsic.CNOT));
+            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;
@@ -330,7 +589,7 @@ namespace Lab3
         }
     }
 
-    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 277, 321)]
+    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 315, 365)]
     public partial class Challenge2 : Operation<IQArray<Qubit>, QVoid>, ICallable
     {
         public Challenge2(IOperationFactory m) : base(m)
@@ -339,11 +598,63 @@ namespace Lab3
 
         String ICallable.Name => "Challenge2";
         String ICallable.FullName => "Lab3.Challenge2";
+        protected IUnitary<(Double,Qubit)> Microsoft__Quantum__Intrinsic__Ry
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Double, Double> Microsoft__Quantum__Math__ArcCos
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Double, Double> Microsoft__Quantum__Math__Sqrt
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<(Qubit,Qubit)> Microsoft__Quantum__Intrinsic__CNOT
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<(Qubit,Qubit,Qubit)> Microsoft__Quantum__Intrinsic__CCNOT
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Qubit>, QVoid> __Body__ => (__in__) =>
         {
             var register = __in__;
-#line 279 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 318 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__Ry.Apply(((2D * Microsoft__Quantum__Math__ArcCos.Apply(Microsoft__Quantum__Math__Sqrt.Apply((2D / 3D)))), register[0L]));
+#line 319 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(register[1L]);
+#line 320 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__CNOT.Apply((register[0L], register[1L]));
+#line 321 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__CCNOT.Apply((register[0L], register[1L], register[2L]));
+#line 322 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__H.Controlled.Apply((new QArray<Qubit>(register[1L]), register[2L]));
+#line 323 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__CNOT.Apply((register[2L], register[1L]));
 #line hidden
             return QVoid.Instance;
         }
@@ -351,6 +662,13 @@ namespace Lab3
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Intrinsic__Ry = this.__Factory__.Get<IUnitary<(Double,Qubit)>>(typeof(global::Microsoft.Quantum.Intrinsic.Ry));
+            this.Microsoft__Quantum__Math__ArcCos = this.__Factory__.Get<ICallable<Double, Double>>(typeof(global::Microsoft.Quantum.Math.ArcCos));
+            this.Microsoft__Quantum__Math__Sqrt = this.__Factory__.Get<ICallable<Double, Double>>(typeof(global::Microsoft.Quantum.Math.Sqrt));
+            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
+            this.Microsoft__Quantum__Intrinsic__CNOT = this.__Factory__.Get<IUnitary<(Qubit,Qubit)>>(typeof(global::Microsoft.Quantum.Intrinsic.CNOT));
+            this.Microsoft__Quantum__Intrinsic__CCNOT = this.__Factory__.Get<IUnitary<(Qubit,Qubit,Qubit)>>(typeof(global::Microsoft.Quantum.Intrinsic.CCNOT));
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;
@@ -361,7 +679,7 @@ namespace Lab3
         }
     }
 
-    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 321, 349)]
+    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 365, 400)]
     public partial class Challenge3 : Operation<IQArray<Qubit>, QVoid>, ICallable
     {
         public Challenge3(IOperationFactory m) : base(m)
@@ -370,11 +688,37 @@ namespace Lab3
 
         String ICallable.Name => "Challenge3";
         String ICallable.FullName => "Lab3.Challenge3";
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__Z
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Qubit>, QVoid> __Body__ => (__in__) =>
         {
             var register = __in__;
-#line 323 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 369 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__H.Apply(register[2L]);
+#line 370 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__H.Apply(register[0L]);
+#line 372 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__H.Controlled.Apply((new QArray<Qubit>(register[2L]), register[1L]));
+#line 373 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(register[1L]);
+#line 374 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__Z.Apply(register[0L]);
 #line hidden
             return QVoid.Instance;
         }
@@ -382,6 +726,9 @@ namespace Lab3
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
+            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
+            this.Microsoft__Quantum__Intrinsic__Z = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.Z));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;
@@ -392,7 +739,7 @@ namespace Lab3
         }
     }
 
-    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 349, -1)]
+    [SourceLocation("/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs", OperationFunctor.Body, 400, -1)]
     public partial class Challenge4 : Operation<IQArray<Qubit>, QVoid>, ICallable
     {
         public Challenge4(IOperationFactory m) : base(m)
@@ -401,11 +748,37 @@ namespace Lab3
 
         String ICallable.Name => "Challenge4";
         String ICallable.FullName => "Lab3.Challenge4";
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        {
+            get;
+            set;
+        }
+
+        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__Z
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Qubit>, QVoid> __Body__ => (__in__) =>
         {
             var register = __in__;
-#line 351 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
-            throw new ExecutionFailException("Not implemented.");
+#line 403 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__X.Apply(register[0L]);
+#line 404 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__H.Apply(register[0L]);
+#line 405 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__H.Apply(register[2L]);
+#line 406 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__H.Controlled.Apply((new QArray<Qubit>(register[2L]), register[1L]));
+#line 407 "/home/ace/scripts/quantum/QSharpExercises/Lab3/Lab3.qs"
+            Microsoft__Quantum__Intrinsic__Z.Controlled.Apply((new QArray<Qubit>(register[1L]), register[2L]));
 #line hidden
             return QVoid.Instance;
         }
@@ -413,6 +786,9 @@ namespace Lab3
         ;
         public override void __Init__()
         {
+            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
+            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
+            this.Microsoft__Quantum__Intrinsic__Z = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.Z));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;

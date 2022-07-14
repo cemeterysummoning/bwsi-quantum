@@ -28,7 +28,13 @@ namespace Lab4 {
     /// 1/√2(|00> + |11>).
     operation Exercise1 (buffer : Bool[], pairA : Qubit) : Unit {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        if buffer[1] {
+            X(pairA);
+        }
+        if buffer[0] {
+            Z(pairA);
+        }
     }
 
 
@@ -54,6 +60,11 @@ namespace Lab4 {
     /// entangled pair. Use false for 0 and true for 1.
     operation Exercise2 (pairA : Qubit, pairB : Qubit) : Bool[] {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        CNOT(pairA, pairB);
+        H(pairA);
+        let resultA = M(pairA);
+        let resultB = M(pairB);
+        return [resultA == One ? true | false, resultB == One ? true | false];
     }
 }

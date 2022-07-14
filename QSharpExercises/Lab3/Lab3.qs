@@ -67,6 +67,9 @@ namespace Lab3 {
 
         // TODO
         // fail "Not implemented.";
+        Exercise1(register);
+        Controlled X(register, target);
+
         
     }
 
@@ -102,7 +105,14 @@ namespace Lab3 {
         // can be used as a set of control qubits.
 
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        
+        ApplyToEach(H, register);
+        
+        
+        Controlled X(register, target);
+        X(register[0]);
+        X(register[1]);
     }
 
 
@@ -133,7 +143,11 @@ namespace Lab3 {
         // states are on the other side together.
 
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        ApplyToEach(Exercise1, registers);
+        Z(registers[0][2]);
+        Z(registers[1][1]);
+        Z(registers[2][0]);
     }
 
 
@@ -171,7 +185,15 @@ namespace Lab3 {
         // use that information to flip the phase of the |110> state.
 
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        ApplyToEach(H, register);
+        use qAux = Qubit();
+        X(qAux);
+        
+        Controlled Z(register, qAux);
+        X(register[2]);
+        
+        Reset(qAux);
     }
 
 
@@ -200,7 +222,9 @@ namespace Lab3 {
         //      let newArray = [someQubit];
 
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        H(register[0]);
+        Controlled H([register[0]], register[1]);
     }
 
 
@@ -227,8 +251,15 @@ namespace Lab3 {
         // Note: It is possible (but challenging) to prepare this state
         // without using an ancilla qubit.
 
-        // TODO
-        fail "Not implemented.";
+        // TODO -> 
+        // fail "Not implemented."; |register> = 1/√2*|000> + 1/2(|111> - |100>)
+        H(register[0]); // put first qubit in superposition
+        Controlled H([register[0]], register[1]); // if register[0], set register[1] in superposition
+        CCNOT(register[0], register[1], register[2]); // if both register[0] and register[1] are 1, then set register[2] to 1
+        ApplyToEach(X, [register[1], register[2]]); // make both register[1] and register[2] opposite
+        Controlled Z([register[1], register[2]], register[0]); // If both register[1] and register[2] were initially 0, then place a phase
+        ApplyToEach(X, [register[1], register[2]]);  // reverse register[1] again
+
     }
 
 
@@ -259,7 +290,13 @@ namespace Lab3 {
     /// A two-qubit register in the |00> state.
     operation Challenge1 (register : Qubit[]) : Unit {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        Ry(2.0 * ArcCos(Sqrt(2.0/3.0)), register[0]);
+        CNOT(register[0], register[1]);
+        X(register[0]);
+        Controlled H([register[0]], register[1]);
+        X(register[0]);
+        X(register[1]);
     }
 
 
@@ -277,7 +314,13 @@ namespace Lab3 {
     /// A three-qubit register in the |000> state.
     operation Challenge2 (register : Qubit[]) : Unit {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        Ry(2.0 * ArcCos(Sqrt(2.0/3.0)), register[0]);
+        X(register[1]);
+        CNOT(register[0], register[1]);
+        CCNOT(register[0], register[1], register[2]);
+        Controlled H([register[1]], register[2]);
+        CNOT(register[2], register[1]);
     }
 
 
@@ -321,7 +364,14 @@ namespace Lab3 {
     /// get to quantum algorithms, but this is a good first hint.
     operation Challenge3 (register : Qubit[]) : Unit {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        
+        H(register[2]);
+        H(register[0]);
+        
+        Controlled H([register[2]], register[1]);
+        X(register[1]);
+        Z(register[0]);
     }
 
 
@@ -349,7 +399,12 @@ namespace Lab3 {
     /// A three-qubit register in the |000> state.
     operation Challenge4 (register : Qubit[]) : Unit {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        X(register[0]);
+        H(register[0]);
+        H(register[2]);
+        Controlled H([register[2]], register[1]);
+        Controlled Z([register[1]], register[2]);
     }
 }
 
