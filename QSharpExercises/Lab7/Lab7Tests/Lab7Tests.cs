@@ -101,6 +101,15 @@ namespace Tests.Lab7
             Assert.Equal(answer, secret);
         }
 
+        [Theory()]
+        [InlineData(3)]
+        [InlineData(6)]
+        [InlineData(9)]   
+        public void Exercise2Test(int NumberOfBits)  
+        {
+            Exercise2CopyTest(NumberOfBits); 
+            Exercise2LeftShiftBy1Test(NumberOfBits); 
+        }
 
         /// <summary>
         /// Runs Simon's algorithm on the "Right Shift by 1" function.

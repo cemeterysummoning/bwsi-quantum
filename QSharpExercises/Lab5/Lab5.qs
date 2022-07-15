@@ -71,7 +71,10 @@ namespace Lab5 {
         // times will have the same effect as only flipping it once, etc.
 
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        for qubit in input {
+            Controlled Z([qubit], output);
+        }
     }
 
 
@@ -117,7 +120,9 @@ namespace Lab5 {
         // without measuring anything.
 
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        Controlled Z([input[firstIndex]], output);
+        Controlled Z([input[secondIndex]], output);
     }
 
 
@@ -161,6 +166,24 @@ namespace Lab5 {
         // before running the oracle!
 
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        use (qubits, output) = (Qubit[inputLength], Qubit());
+        X(output);
+        ApplyToEach(H, qubits);
+        oracle(qubits, output);
+        mutable results = new Result[inputLength];
+        mutable isConstant = true;
+        ApplyToEach(H, qubits);
+
+        for i in 0..inputLength - 1 {
+            set results w/= i <- M(qubits[i]);
+            if results[i] == One {
+                set isConstant = false;
+            }
+        }
+        ResetAll(qubits);
+        Reset(output);
+        return isConstant;
+
     }
 }
