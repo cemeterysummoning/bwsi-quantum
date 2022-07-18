@@ -31,7 +31,12 @@ namespace Lab6 {
     operation Exercise1 (classicalBits : Bool[], register : Qubit[]) : Unit
     is Adj {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        for i in 0 .. Length(register) - 1 {
+            if (classicalBits[i]) {
+                X(register[i]);
+            }
+        }
     }
 
 
@@ -51,7 +56,10 @@ namespace Lab6 {
     /// |0...0> state. The target qubit will be provided in the |1> state.
     operation Exercise2 (register : Qubit[], target : Qubit) : Unit {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        ApplyToEach(X, register);
+        Controlled Z(register, target);
+        ApplyToEach(X, register);
     }
 
 
@@ -79,7 +87,7 @@ namespace Lab6 {
     /// A quantum register containing the potential encryption key that is
     /// being checked by your oracle - think of it like a quantum version of
     /// the classical encryption key.
-    /// 
+    /// use ancilla = Qubit();
     /// ## target
     /// The qubit that you should phase-flip if the candidate key is the
     /// correct key - that is, if encrypting the original message with it
@@ -105,7 +113,16 @@ namespace Lab6 {
         // its original state.
 
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+
+        Exercise1(originalMessage, candidateEncryptionKey);
+        Exercise1(encryptedMessage, candidateEncryptionKey);
+
+        Exercise2(candidateEncryptionKey, target);
+
+        Exercise1(encryptedMessage, candidateEncryptionKey);
+        Exercise1(originalMessage, candidateEncryptionKey);
+        
     }
 
 
@@ -135,7 +152,15 @@ namespace Lab6 {
         target : Qubit
     ) : Unit {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+
+        oracle(register, target);
+
+        ApplyToEach(H, register);
+
+        Exercise2(register, target);
+
+        ApplyToEach(H, register);
     }
 
 
@@ -169,6 +194,25 @@ namespace Lab6 {
         let iterations = Round(PowD(2.0, IntAsDouble(numberOfQubits) / 2.0));
 
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+
+        use (qubits, target) = (Qubit[numberOfQubits], Qubit());
+        mutable bits = new Bool[numberOfQubits];
+
+        ApplyToEach(H, qubits);
+
+        for i in 1 .. iterations {
+            Exercise4(oracle, qubits, target);
+        }
+
+        for i in 0 .. numberOfQubits - 1 {
+            let result = M(qubits[i]);
+            set bits w/= i <- ResultAsBool(result);
+        }
+
+        ResetAll(qubits + [target]);
+
+        return bits;
+
     }
 }
