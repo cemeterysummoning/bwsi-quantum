@@ -92,7 +92,26 @@ namespace Lab7 {
         input : Bool[]
     ) : Bool[] {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        use inputsQ = Qubit[Length(input)];
+        for i in 0 .. Length(input) - 1 {
+            if (input[i]) {
+                X(inputsQ[i]);
+            }
+        }
+        use outputsQ = Qubit[Length(input)];
+
+        mutable bitstringOut = new Bool[Length(input)];
+
+        op(inputsQ, outputsQ);
+
+        for i in 0 .. Length(input) - 1 {
+            let result = M(outputsQ[i]);
+            set bitstringOut w/= i <- ResultAsBool(result);
+        }
+        ResetAll(inputsQ + outputsQ);
+
+        return bitstringOut;
     }
 
 
@@ -121,7 +140,17 @@ namespace Lab7 {
         inputSize : Int
     ) : Bool[] {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+
+        use qubits = Qubit[inputSize];
+        use outputs = Qubit[inputSize];
+        ApplyToEach(H, qubits);
+        op(qubits, outputs);
+        ApplyToEach(H, qubits);
+        
+        mutable results = MeasureEachZ(qubits);
+        ResetAll(qubits + outputs);
+        return ResultArrayAsBoolArray(results);
     }
 
 
@@ -159,7 +188,10 @@ namespace Lab7 {
     /// that result, then you've implemented it properly.
     operation Challenge1 (input : Qubit[], output : Qubit[]) : Unit {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        for i in 0 .. Length(input) - 2 {
+            CNOT(input[i], output[i + 1]);
+        }
     }
 
 
@@ -194,7 +226,9 @@ namespace Lab7 {
     /// variants of the X gate (CNOT and CCNOT).
     operation Challenge2 (input : Qubit[], output : Qubit[]) : Unit {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+
+
     }
 
 }
