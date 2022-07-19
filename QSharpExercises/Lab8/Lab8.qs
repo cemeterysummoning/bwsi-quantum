@@ -29,7 +29,21 @@ namespace Lab8 {
         // The second is the Microsoft.Quantum.Intrinsic.R1Frac() gate.
 
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+
+        for i in 0 .. Length(register!) - 1 {
+            H(register![i]);
+            for j in i + 1 .. Length(register!) - 1 {
+                Controlled R1Frac([register![j]], (2, (j - i) + 1, register![i]));
+            }
+        }
+
+        let length = Length(register!);
+        let halfLength = length / 2;
+        for i in 0 .. halfLength - 1 {
+            SWAP(register![i], register![length - 1 - i]);
+        }
+
     }
 
 
@@ -62,7 +76,33 @@ namespace Lab8 {
         sampleRate : Double
     ) : Double {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        Adjoint Exercise1(register);
+        // f_i = \frac{i}{r}, r is range, i is sample #
+        mutable result = 0.0;
+
+        let length = Length(register!);
+        let halfLength = length / 2;
+        for i in 0 .. halfLength - 1 {
+            SWAP(register![i], register![length - 1 - i]);
+        }
+
+        for i in 0 .. Length(register!) - 1 {
+            let temp = M(register![i]);
+            mutable val = 0.0;
+            if (ResultAsBool(temp)) {
+                set val = 1.0;
+            }
+
+            set result = result + val * PowD(2.0, IntAsDouble(i));
+        }
+        
+
+        if (result > PowD(2.0, IntAsDouble(Length(register!) - 1))) {
+            set result = PowD(2.0, IntAsDouble(Length(register!))) - result;
+        }
+
+        return result * sampleRate / PowD(2.0, IntAsDouble(Length(register!)));
     }
 
 }
