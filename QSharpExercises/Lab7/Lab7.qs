@@ -227,7 +227,17 @@ namespace Lab7 {
     operation Challenge2 (input : Qubit[], output : Qubit[]) : Unit {
         // TODO
         // fail "Not implemented.";
+        CNOT(input[0], input[1]);
+        X(input[1]);
+        CNOT(input[1], output[0]);
+        CNOT(input[2], output[0]);
+        CNOT(input[2], output[1]);
+        X(input[2]);
+        CCNOT(input[1], input[2], output[2]);
 
+        X(input[2]);
+        X(input[1]);
+        CNOT(input[0], input[1]);
 
     }
 
