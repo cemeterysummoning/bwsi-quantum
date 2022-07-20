@@ -33,7 +33,10 @@ namespace Lab10 {
         // logical qubit back into the original three unentangled qubits.
 
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+
+        CNOT(original, spares[0]);
+        CNOT(original, spares[1]);
     }
 
 
@@ -66,7 +69,19 @@ namespace Lab10 {
         // back to the |0> state!
 
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        use a1 = Qubit();
+        use a2 = Qubit();
+        CNOT(register[0], a1);
+        CNOT(register[1], a1);
+        CNOT(register[0], a2);
+        CNOT(register[2], a2);
+        mutable arr = new Result[2];
+        set arr w/= 0 <- M(a1);
+        set arr w/= 1 <- M(a2);
+
+        ResetAll([a1, a2]);
+        return arr;
     }
 
 
@@ -99,6 +114,17 @@ namespace Lab10 {
         // of the qubit you identified as broken to help with debugging.
 
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        if (syndromeMeasurement[0] == Zero) {
+            if (syndromeMeasurement[1] == One) {
+                X(register[2]);
+            }
+        } else {
+            if (syndromeMeasurement[1] == Zero) {
+                X(register[1]);
+            } else {
+                X(register[0]);
+            }
+        }
     }
 }
