@@ -30,7 +30,25 @@ namespace QSharpExercises.Lab11 {
     operation Exercise1 (original : Qubit, spares : Qubit[]) : Unit
     is Adj {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        H(spares[3]); 
+        H(spares[4]);
+        H(spares[5]);
+
+        CNOT(original, spares[0]);
+        CNOT(original, spares[1]);
+
+        CNOT(spares[5], spares[2]);
+        CNOT(spares[5], spares[0]);
+        CNOT(spares[5], original);
+
+        CNOT(spares[4], spares[2]);
+        CNOT(spares[4], spares[1]);
+        CNOT(spares[4], original);
+
+        CNOT(spares[3], spares[2]);
+        CNOT(spares[3], spares[1]);
+        CNOT(spares[3], spares[0]);
     }
 
 
@@ -52,7 +70,33 @@ namespace QSharpExercises.Lab11 {
     /// produces.
     operation Exercise2 (register : Qubit[]) : Result[] {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+
+        use ancillas = Qubit[6];
+        mutable indexes0 = [0, 2, 4, 6];
+        mutable indexes1 = [1, 2, 5, 6];
+        mutable indexes2 = [3, 4, 5, 6];
+        
+        ApplyToEach(H, ancillas[3 .. 5]);
+
+        for i in indexes0 {
+            CNOT(register[i], ancillas[0]);
+            CNOT(ancillas[3], register[i]);
+        }
+        for i in indexes1 {
+            CNOT(register[i], ancillas[1]);
+            CNOT(ancillas[4], register[i]);
+        }
+        for i in indexes2 {
+            CNOT(register[i], ancillas[2]);
+            CNOT(ancillas[5], register[i]);
+        }
+
+        ApplyToEach(H, ancillas[3 .. 5]);
+        
+
+        return [M(ancillas[2]), M(ancillas[1]), M(ancillas[0])];
+
     }
 
 
@@ -74,7 +118,59 @@ namespace QSharpExercises.Lab11 {
     /// produces.
     operation Exercise3 (register : Qubit[]) : Result[] {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        use ancillas = Qubit[6];
+        mutable indexes0 = [0, 2, 4, 6];
+        mutable indexes1 = [1, 2, 5, 6];
+        mutable indexes2 = [3, 4, 5, 6];
+        
+        ApplyToEach(H, ancillas[3 .. 5]);
+
+        for i in indexes0 {
+            CNOT(register[i], ancillas[0]);
+            CNOT(ancillas[3], register[i]);
+        }
+        for i in indexes1 {
+            CNOT(register[i], ancillas[1]);
+            CNOT(ancillas[4], register[i]);
+        }
+        for i in indexes2 {
+            CNOT(register[i], ancillas[2]);
+            CNOT(ancillas[5], register[i]);
+        }
+
+        ApplyToEach(H, ancillas[3 .. 5]);
+        
+
+        return [M(ancillas[5]), M(ancillas[4]), M(ancillas[3])];
+    }
+
+    operation CorrectionsAll (register : Qubit[]) : Result[] {
+        // TODO
+        // fail "Not implemented.";
+        use ancillas = Qubit[6];
+        mutable indexes0 = [0, 2, 4, 6];
+        mutable indexes1 = [1, 2, 5, 6];
+        mutable indexes2 = [3, 4, 5, 6];
+        
+        ApplyToEach(H, ancillas[3 .. 5]);
+
+        for i in indexes0 {
+            CNOT(register[i], ancillas[0]);
+            CNOT(ancillas[3], register[i]);
+        }
+        for i in indexes1 {
+            CNOT(register[i], ancillas[1]);
+            CNOT(ancillas[4], register[i]);
+        }
+        for i in indexes2 {
+            CNOT(register[i], ancillas[2]);
+            CNOT(ancillas[5], register[i]);
+        }
+
+        ApplyToEach(H, ancillas[3 .. 5]);
+
+        return [M(ancillas[5]), M(ancillas[4]), M(ancillas[3]), M(ancillas[2]), M(ancillas[1]), M(ancillas[0])];
     }
 
 
@@ -115,7 +211,16 @@ namespace QSharpExercises.Lab11 {
     /// of regular old classical math and logic.
     function Exercise4 (syndrome : Result[]) : Int {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        mutable number = 0;
+        
+        for i in 0 .. Length(syndrome) - 1 {
+            if (ResultAsBool(syndrome[i])) {
+                set number += 2 ^ (Length(syndrome) - 1 - i);
+            }
+        }
+        return number - 1;
+
     }
 
 
@@ -142,6 +247,18 @@ namespace QSharpExercises.Lab11 {
     /// immediately finish!
     operation Exercise5 (register : Qubit[]) : Unit {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        let errors = CorrectionsAll(register);
+        let brokenPhase = Exercise4(errors[0 .. 2]);
+        let brokenBit = Exercise4(errors[3 .. 5]);
+
+        if (brokenBit != -1) {
+            X(register[brokenBit]);
+        }
+        
+        if (brokenPhase != -1) {
+            Z(register[brokenPhase]);
+        }
+        
     }
 }
