@@ -44,7 +44,16 @@ namespace Lab9 {
         // do an in-place quantum modular multiplication.
 
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        X(output[Length(output) - 1]);
+        for i in 0 .. Length(input) - 1 {
+            let power = Length(input) - i - 1;
+            let constantA = 2 ^ power;
+            let constantB = ExpModI(a, constantA, b);
+
+            Controlled MultiplyByModularInteger([input[i]], (constantB, b, LittleEndian(output)));
+        }
+        
     }
 
 
@@ -75,6 +84,30 @@ namespace Lab9 {
     /// value that was measured from the qubits), and the second value should
     /// be the denominator (the total size of the input space, which is 2^n
     /// where n is the size of your input register).
+    operation QFT (register : Qubit[]) : Unit is Adj + Ctl {
+        // Hint: there are two functions you may want to use here:
+        // the first is your implementation of register reversal in Lab 2,
+        // Exercise 2.
+        // The second is the Microsoft.Quantum.Intrinsic.R1Frac() gate.
+
+        // TODO
+        // fail "Not implemented.";
+
+        for i in 0 .. Length(register) - 1 {
+            H(register[i]);
+            for j in i + 1 .. Length(register) - 1 {
+                Controlled R1Frac([register[j]], (2, (j - i) + 1, register[i]));
+            }
+        }
+
+        let length = Length(register);
+        let halfLength = length / 2;
+        for i in 0 .. halfLength - 1 {
+            SWAP(register[i], register[length - 1 - i]);
+        }
+
+    }
+
     operation Exercise2 (
         numberToFactor : Int,
         guess : Int
@@ -89,7 +122,43 @@ namespace Lab9 {
         // see what values you came up with versus what the system expects.
 
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+
+        let outputLength = Ceiling(Log(IntAsDouble(numberToFactor) + 1.0) / Log(2.0));
+        let inputLength = 2 * outputLength;
+
+        use output = Qubit[outputLength];
+        use input = Qubit[inputLength];
+
+        ApplyToEach(H, input);
+
+        Exercise1(guess, numberToFactor, input, output);
+
+        Adjoint QFT(input);
+
+        mutable results = new Result[Length(input)];
+
+        for i in 0 .. Length(input) - 1 {
+            set results w/= i <- M(input[i]);
+        }
+
+        mutable num = 0;
+        
+        for i in 0 .. Length(input) - 1 {
+            if (ResultAsBool(results[i])) {
+                set num += 2 ^ (Length(input) - 1 - i);
+            }
+        }
+
+        if (num > 2^(inputLength - 1)) {
+            set num = 2^inputLength - num;
+        }
+        
+        ResetAll(output + input);
+        
+        
+        return (num, 2 ^ (inputLength));
+
     }
 
 
@@ -126,7 +195,38 @@ namespace Lab9 {
         denominatorThreshold : Int
     ) : (Int, Int) {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        Message($"initial numerator: {numerator}, initial denominator: {denominator}");
+        
+        mutable p = [0, numerator];
+        mutable q = [0, denominator];
+        mutable a = [0, p[1] / q[1]];
+        mutable r = [0, p[1] % q[1]];
+        mutable n = [1, a[1] * 1 + 0];
+        mutable d = [0, a[1] * 0 + 1];
+
+        set p += [q[1]];
+        set q += [r[1]];
+        mutable i = 2;
+        if (r[1] == 0) {
+            return (n[1], d[1]);
+        }
+
+        while (r[i - 1] != 0 and d[i - 1] < denominatorThreshold) {
+            set a += [p[i] / q[i]];
+            set r += [p[i] % q[i]];
+            set n += [a[i] * n[i - 1] + n[i - 2]];
+            set d += [a[i] * d[i - 1] + d[i - 2]];
+
+            set p += [q[i]];
+            set q += [r[i]];
+            set i += 1;
+        }
+
+        if (d[i - 1] > denominatorThreshold) {
+            return (n[i - 2], d[i - 2]);
+        }
+        return (n[i - 1], d[i - 1]);
     }
 
 
@@ -150,6 +250,18 @@ namespace Lab9 {
     /// 
     /// # Output
     /// The period of y = guess^x mod numberToFactor.
+    operation Exercise4Helper (numberToFactor : Int, guess: Int) : Int {
+        mutable (numerator, denominator) = Exercise2(numberToFactor, guess);
+        if (numerator == 0) {
+            repeat {
+                set (numerator, denominator) = Exercise2(numberToFactor, guess);
+            } until (numerator != 0);
+        }
+
+        set (numerator, denominator) = Exercise3(numerator, denominator, numberToFactor);
+        return denominator;
+    }
+
     operation Exercise4 (numberToFactor : Int, guess : Int) : Int
     {
         // Note: you can't use while loops in operations in Q#.
@@ -161,7 +273,23 @@ namespace Lab9 {
         // function to calculate the GCD of two numbers.
 
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+
+        mutable factor = Exercise4Helper(numberToFactor, guess);
+        mutable d_old = 0;
+        mutable d_new = 0;
+        if ((guess ^ factor) % numberToFactor != 1) {
+            repeat {
+                set d_old = factor;
+                repeat {
+                    set d_new = Exercise4Helper(numberToFactor, guess);
+
+                } until (d_new != d_old); 
+                set factor = d_old * d_new / GreatestCommonDivisorI(d_old, d_new);
+
+            } until ((guess ^ factor) % numberToFactor == 1);
+        }
+        return factor;
     }
 
 
@@ -193,6 +321,21 @@ namespace Lab9 {
         guess : Int, period : Int
     ) : Int {
         // TODO
-        fail "Not implemented.";
+        // fail "Not implemented.";
+        if (period % 2 == 1) {
+            return -1;
+        } 
+        let constant = guess ^ (period / 2) % numberToFactor;
+        if (constant == 1 or constant == -1) {
+            return -2;
+        }
+
+        let factor1 = GreatestCommonDivisorI(numberToFactor, constant + 1);
+        let factor2 = GreatestCommonDivisorI(numberToFactor, constant - 1);
+        if (factor1 * factor2 == numberToFactor and factor1 > 2 and factor1 < numberToFactor) {
+            return factor1;
+        } else {
+            return -2;
+        }
     }
 }
