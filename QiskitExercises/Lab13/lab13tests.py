@@ -1,12 +1,7 @@
 # Tests for Lab 13: Grover's Algorithm
 # Copyright 2021 The MITRE Corporation. All Rights Reserved.
 
-
-import vs_test_path_fixup
 import unittest
-import os
-import sys
-sys.path.insert(1, os.path.realpath(os.path.pardir))
 
 from qiskit import QuantumCircuit, ClassicalRegister, QuantumRegister
 from qiskit import execute
