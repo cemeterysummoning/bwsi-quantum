@@ -5,6 +5,7 @@
 from qiskit import QuantumCircuit, ClassicalRegister, QuantumRegister
 from qiskit import execute
 from qiskit import Aer
+from qiskit import assemble
 
 
 def always_zero(circuit, input, output):
@@ -59,7 +60,9 @@ def exercise_1(circuit, input, output):
             of qubits in the |1> state.
     """
     
-    raise Exception("Not implemented yet.")
+    # raise Exception("Not implemented yet.")
+    for qubit in input:
+        circuit.cz(qubit, output)
 
 
 def exercise_2(circuit, first_index, second_index, input, output):
@@ -87,7 +90,9 @@ def exercise_2(circuit, first_index, second_index, input, output):
             at the given indices have opposite parity.
     """
     
-    raise Exception("Not implemented yet.")
+    # raise Exception("Not implemented yet.")
+    circuit.cz(input[first_index], output)
+    circuit.cz(input[second_index], output)
 
 
 def exercise_3(input_length, oracle):
@@ -112,4 +117,33 @@ def exercise_3(input_length, oracle):
             its criteria, causing that state to become phase-flipped as well.
     """
     
-    raise Exception("Not implemented yet.")
+    # raise Exception("Not implemented yet.")
+    input = QuantumRegister(input_length)
+    output = QuantumRegister(1)
+    input_measure = ClassicalRegister(input_length)
+    output_measure = ClassicalRegister(1)
+
+    circuit = QuantumCircuit(input, output, input_measure, output_measure)
+
+    circuit.x(output)
+    circuit.h(input)
+    
+    oracle(circuit, input, output)
+    circuit.h(input)
+    circuit.measure(input, input_measure)
+
+    sim = Aer.get_backend('aer_simulator')
+    q = assemble(circuit, sim)
+    results = sim.run(q, shots=1).result()
+
+    answer = results.get_counts()
+    
+    resulting_answer = answer.keys()
+    for i in resulting_answer:
+        last = int(i.split()[1])
+        if last != 0:
+            return False
+    return True
+
+if __name__ == '__main__':
+    print(exercise_3(3, always_zero))
