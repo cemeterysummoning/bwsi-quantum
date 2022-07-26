@@ -2,9 +2,13 @@
 # Copyright 2021 The MITRE Corporation. All Rights Reserved.
 
 
+from numpy import number
 from qiskit import QuantumCircuit, ClassicalRegister, QuantumRegister
 from qiskit import execute
 from qiskit import Aer
+from qiskit import assemble
+import math
+import random
 
 
 def exercise_1(circuit, classical_bits, register):
@@ -26,7 +30,10 @@ def exercise_1(circuit, classical_bits, register):
             the same length as the classical_bits array.
     """
     
-    raise Exception("Not implemented yet.")
+    # raise Exception("Not implemented yet.")
+    for i in range(len(classical_bits)):
+        if classical_bits[i]:
+            circuit.x(register[i])
 
 
 def exercise_2(circuit, register, target):
@@ -45,8 +52,29 @@ def exercise_2(circuit, register, target):
             the |1> state.
     """
     
-    raise Exception("Not implemented yet.")
+    # raise Exception("Not implemented yet.")
+    circuit.x(register)
 
+    ancillas = QuantumRegister(len(register) - 1)
+
+    circuit.add_register(ancillas)
+
+    
+
+    circuit.ccx(register[0], register[1], ancillas[0])
+    if len(register) > 2: 
+        for i in range(2, len(register)):
+            circuit.ccx(register[i], ancillas[i - 2], ancillas[i - 1])
+
+    circuit.cz(ancillas[len(ancillas) - 1], target)
+
+    if len(register) > 2: 
+        for i in range(len(register) - 1, 1, -1):
+            circuit.ccx(register[i], ancillas[i - 2], ancillas[i - 1])
+
+    circuit.ccx(register[0], register[1], ancillas[0])
+
+    circuit.x(register)
 
 def exercise_3(circuit, 
                original_message, 
@@ -88,7 +116,14 @@ def exercise_3(circuit,
         proof-of-concept.
     """
     
-    raise Exception("Not implemented yet.")
+    # raise Exception("Not implemented yet.")
+    exercise_1(circuit, original_message, candidate_encryption_key)
+    exercise_1(circuit, encrypted_message, candidate_encryption_key)
+    
+    exercise_2(circuit, candidate_encryption_key, target)
+
+    exercise_1(circuit, encrypted_message, candidate_encryption_key)
+    exercise_1(circuit, original_message, candidate_encryption_key)
 
 
 def exercise_4(circuit, oracle, register, target):
@@ -111,7 +146,13 @@ def exercise_4(circuit, oracle, register, target):
             target you can use for any phase-flipping oracles. 
     """
     
-    raise Exception("Not implemented yet.")
+    # raise Exception("Not implemented yet.")
+    
+    oracle(circuit, register, target)
+    circuit.h(register)
+    exercise_2(circuit, register, target)
+    circuit.h(register)
+    
 
 
 def exercise_5(oracle, number_of_qubits):
@@ -137,4 +178,38 @@ def exercise_5(oracle, number_of_qubits):
         For example, if Qiskit measured 00111, you must return "11100".
     """
     
-    raise Exception("Not implemented yet.")
+    # raise Exception("Not implemented yet.")
+    numtimes = math.ceil(math.sqrt(2 ** number_of_qubits))
+
+    register = QuantumRegister(number_of_qubits)
+    register_measure = ClassicalRegister(number_of_qubits)
+
+    output = QuantumRegister(1)
+
+    circuit = QuantumCircuit(register, output, register_measure)
+
+    circuit.x(output)
+    circuit.h(register)
+
+    for i in range(numtimes):
+        exercise_4(circuit, oracle, register, output)
+
+    circuit.measure(register, register_measure)
+    simulator = Aer.get_backend('aer_simulator')
+    qobj = assemble(circuit, shots=1)
+    job = simulator.run(qobj)
+    print('here')
+    result = job.result()
+    counts = result.get_counts(circuit)
+    value = ""
+    for i in counts.keys():
+        value = i;
+
+    return value
+
+if __name__ == '__main__':
+    original = [random.randint(0, 1) for i in range(3)]
+    key = [random.randint(0, 1) for i in range(3)]
+    encrypted = [(original[i] != key[i]) for i in range(3)]
+    oracle = lambda circuit_arg, qubit_arg, target_arg : exercise_3(circuit_arg, original, encrypted, qubit_arg, target_arg)
+    print(exercise_5(oracle, 3))

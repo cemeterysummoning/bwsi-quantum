@@ -8,6 +8,7 @@ from qiskit import execute
 from qiskit import Aer
 import lab13
 import random
+import sys
 
 class Lab13Tests(unittest.TestCase):
 
@@ -188,7 +189,7 @@ class Lab13Tests(unittest.TestCase):
         encrypted = None
         oracle = lambda circuit_arg, qubit_arg, target_arg : lab13.exercise_3(circuit_arg, original, encrypted, qubit_arg, target_arg)
 
-        for number_of_qubits in range(6, 11):
+        for number_of_qubits in range(3, 6):
             original = [random.randint(0, 1) for i in range(number_of_qubits)]
             key = [random.randint(0, 1) for i in range(number_of_qubits)]
             encrypted = [(original[i] != key[i]) for i in range(number_of_qubits)]

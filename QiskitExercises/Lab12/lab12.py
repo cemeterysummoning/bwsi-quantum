@@ -131,6 +131,7 @@ def exercise_3(input_length, oracle):
     oracle(circuit, input, output)
     circuit.h(input)
     circuit.measure(input, input_measure)
+    print(circuit)
 
     sim = Aer.get_backend('aer_simulator')
     q = assemble(circuit, sim)
@@ -140,6 +141,7 @@ def exercise_3(input_length, oracle):
     
     resulting_answer = answer.keys()
     for i in resulting_answer:
+        print(i)
         last = int(i.split()[1])
         if last != 0:
             return False
